@@ -101,6 +101,10 @@ void printVector(std::vector<uint32_t> vec);
 #else
     //#include "mbed.h"
     #include "Arduino.h"
+
+    #undef max
+    #undef min
+
 //#   error "Unknown compiler"
     // little endian to big endian
     //uint32_t htonl(uint32_t& val);
